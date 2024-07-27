@@ -1,13 +1,104 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  font-family: Arial;
+  font-size: 110%;
+  background: #222831;
+  color: #ececec;
+  /*     margin: 0px; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#calculator-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #30475e;
+  padding: 0.5em;
+  border-radius: 5px;
+  height: 310px;
+  width: 220px;
+  align-items: stretch;
+}
+
+.partition-div {
+  padding: 0.25em;
+}
+
+#top-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 35%;
+  border: 1px solid #222831;
+  border-radius: 5px;
+}
+
+p,
+h2 {
+  margin: 0.5em;
+}
+
+#display {
+  margin: 0px;
+}
+
+#middle-div {
+  display: flex;
+  height: 15%;
+}
+
+#equals,
+#clear {
+  height: 100%;
+  width: 50%;
+}
+
+#bottom-div {
+  display: flex;
+  height: 60%;
+}
+
+#numbers-div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+#operators-div {
+  display: flex;
+  width: 20%;
+  flex-direction: column;
+}
+
+.operator {
+  display: flex;
+  height: 25%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.number {
+  display: flex;
+  height: 25%;
+  width: 33%;
+  justify-content: center;
+  align-items: center;
+}
+
+.decimal {
+  width: 66%;
+}
+
+button {
+  border: 1px solid #222831;
+  border-radius: 2px;
+  box-shadow: 2px 3px 2px #222831;
+  background-color: #30475e;
+  color: #ececec;
+}
+
+button:active {
+  background-color: #f2a365;
 }
