@@ -69,7 +69,7 @@ const MiddleDiv = (props) => {
   return (
     <div id="middle-div" className="partition-div">
       <button id="clear" value="clear" onClick={props.calculate}>
-        Delete
+        Borrar
       </button>
       <button id="equals" value="=" onClick={props.calculate}>
         =
